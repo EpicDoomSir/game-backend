@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_195058) do
     t.string "username"
     t.integer "pin"
     t.integer "total_points"
+    t.string "avatar"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :username
       t.integer :pin
       t.integer :total_points
+      t.string :avatar
 
       t.timestamps
     end
