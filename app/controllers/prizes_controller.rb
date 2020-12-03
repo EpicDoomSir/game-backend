@@ -29,6 +29,6 @@ class PrizesController < ApplicationController
     private
 
     def prize_params
-        params.permit(:name, :cost, :description)
+        params.permit(:name, :cost, :description, :image_url)
     end
 end
