@@ -8,6 +8,8 @@
 User.destroy_all
 Game.destroy_all
 GameSession.destroy_all
+Prize.destroy_all
+UserPrize.destroy_all
 
 user1 = User.create(username: "bob", pin: 1234, total_points: 0, avatar: "https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg")
 user2 = User.create(username: "taylor", pin: 4321, total_points: 0, avatar: "https://cdn.dribbble.com/users/199982/screenshots/4044699/furkan-avatar-dribbble.png")
@@ -22,3 +24,15 @@ GameSession.create(user_id: user3.id, game_id: game1.id, score: 45)
 GameSession.create(user_id: user1.id, game_id: game1.id, score: 27)
 GameSession.create(user_id: user2.id, game_id: game1.id, score: 111)
 
+prize1 = Prize.create!(name: "Ian Player Card", cost: 100, description: "Gain the clarity and omniscience of Ian's mind by obtaining this card!", image_url: "https://ca.slack-edge.com/T02MD9XTF-UD54WDGFP-ca9e4fa7fa57-512")
+prize2 = Prize.create!(name: "Michelle Player Card", cost: 100, description: "Gain the humor and wit of Michelle's mind by obtaining this card!", image_url: "https://ca.slack-edge.com/T02MD9XTF-U011WKXUXTK-5ce7733b96e2-512")
+prize3 = Prize.create!(name: "Isabelle Player Card", cost: 100, description: "Gain the encouragement of Isabelle's mind by obtaining this card!", image_url: "https://ca.slack-edge.com/T02MD9XTF-UC6H2GLG0-5df96d5f1ca6-512")
+prize4 = Prize.create!(name: "Greg Player Card", cost: 100, description: "Gain the sense of peace and calm of Greg's mind by obtaining this card!", image_url: "https://ca.slack-edge.com/T02MD9XTF-U8H2RA3C1-643c8ce562ef-512")
+prize5 = Prize.create!(name: "Caryn Player Card", cost: 100, description: "Gain the speed and energy of Caryn's mind by obtaining this card!", image_url: "https://learning.flatironschool.com/courses/1270/files/66136/preview")
+
+
+UserPrize.create!(user_id: user1.id, prize_id: prize1.id)
+UserPrize.create!(user_id: user1.id, prize_id: prize3.id)
+UserPrize.create!(user_id: user2.id, prize_id: prize1.id)
+UserPrize.create!(user_id: user3.id, prize_id: prize4.id)
+UserPrize.create!(user_id: user2.id, prize_id: prize2.id)

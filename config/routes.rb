@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_prizes
+  resources :prizes
   resources :game_sessions
   resources :games
   resources :users
