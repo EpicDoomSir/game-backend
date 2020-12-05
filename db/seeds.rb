@@ -10,9 +10,11 @@ Game.destroy_all
 Prize.destroy_all
 UserPrize.destroy_all
 
-user1 = User.create(username: "bob", pin: 1234, total_points: 0, avatar: "https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg")
-user2 = User.create(username: "taylor", pin: 4321, total_points: 0, avatar: "https://cdn.dribbble.com/users/199982/screenshots/4044699/furkan-avatar-dribbble.png")
-user3 = User.create(username: "beth", pin: 1234, total_points: 0, avatar: "https://o0o0sm3y25-flywheel.netdna-ssl.com/wp-content/uploads/2019/08/7-Best-Sites-To-Create-Avatars-Of-Yourself.jpg")
+user1 = User.create(username: "bob", pin: 1234, total_points: 0, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F5%2F55%2FXbox_NXE_avatar.png&f=1&nofb=1")
+user2 = User.create(username: "taylor", pin: 1234, total_points: 0, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets1.ignimgs.com%2Fthumbs%2FuserUploaded%2F2017%2F6%2F16%2Fxboxavatars-1497634732199_1280w.jpg&f=1&nofb=1")
+user3 = User.create(username: "beth", pin: 1234, total_points: 0, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnofiredrills.com%2Fwp-content%2Fuploads%2F2016%2F10%2Fmyavatar.png%3Fresize%3D400%252C400%26ssl%3D1&f=1&nofb=1")
+user4 = User.create(username: "Eitan", pin: 1234, total_points: 500, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngarts.com%2Ffiles%2F3%2FCool-Avatar-Transparent-Image.png&f=1&nofb=1")
+user5 = User.create(username: "Mary", pin: 1234, total_points: 500, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fbeautiful-blond-girl-magnificent-curly-260nw-532660309.jpg&f=1&nofb=1")
 
 game1 = Game.create(title: "memory", time: 120)
 

@@ -6,7 +6,10 @@ class UserPrizesController < ApplicationController
 
     def create
         user_prize = UserPrize.create!(user_prize_params)
-        render json: user_prize
+        user = user_prize.user
+        user.total_points = user.total_points - user_prize.prize.cost
+        user.save
+        render json: user 
     end
     
     def destroy
