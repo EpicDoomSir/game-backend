@@ -18,7 +18,7 @@ user4 = User.create(username: "Eitan", pin: 1234, total_points: 500, avatar: "ht
 user5 = User.create(username: "Mary", pin: 1234, total_points: 500, avatar: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fbeautiful-blond-girl-magnificent-curly-260nw-532660309.jpg&f=1&nofb=1")
 
 game1 = Game.create(title: "memory", time: 200)
-game1 = Game.create(title: "sliding", time: 200)
+game2 = Game.create(title: "sliding", time: 200)
 
 GameSession.create(user_id: user1.id, game_id: game1.id, score: 60)
 GameSession.create(user_id: user2.id, game_id: game1.id, score: 90)
