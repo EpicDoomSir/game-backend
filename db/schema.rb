@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_12_03_172947) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "game_sessions", force: :cascade do |t|
     t.integer "user_id"
     t.integer "game_id"
